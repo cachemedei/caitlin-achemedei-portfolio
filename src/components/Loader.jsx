@@ -13,7 +13,7 @@ const Loading = () => {
     }, []);
 
     const style = {
-        loader: 'min-h-screen flex items-start justify-center pt-[100px] space-x-[60px]',
+        loader: 'min-h-screen flex items-start justify-center pt-[100px] space-x-[20px] md:space-x-[60px]',
         c1: `w-[40px] transition-opacity ease-in-out duration-[500ms] ${
             isVisible ? 'opacity-100' : 'opacity-0'
         }`,
@@ -26,9 +26,21 @@ const Loading = () => {
     };
     return (
         <div className={style.loader}>
-            <img className={style.c1} src={cat} alt='' />
-            <img className={style.c2} src={cat} alt='' />
-            <img className={style.c3} src={cat} alt='' />
+            <img
+                className={style.c1}
+                src={cat}
+                alt='Line drawing of a cats face'
+            />
+            <img
+                className={style.c2}
+                src={cat}
+                alt='Line drawing of a cats face'
+            />
+            <img
+                className={style.c3}
+                src={cat}
+                alt='Line drawing of a cats face'
+            />
         </div>
     );
 };

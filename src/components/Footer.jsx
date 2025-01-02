@@ -4,7 +4,7 @@ import base from '/images/base.png';
 
 const Footer = () => {
     const style = {
-        footerSection: 'h-fit flex justify-evenly mt-auto relative',
+        footerSection: 'h-fit flex justify-evenly mt-[30px] relative',
         container:
             'flex flex-col items-center p-[8px] text-[16px] hover:mt-[-30px] duration-500 bg-[#e0ebd6] rounded z-100 md:text-[20px]',
         logo: 'w-[30px]',
