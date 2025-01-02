@@ -6,7 +6,7 @@ const Project = () => {
         projectTitle: 'text-[20px] text-[#1b721b] md:text-[26px]',
         text: 'font-light ml-[10px] md:text-[20px]',
         button: 'border-[1px] border-[#6c976c] rounded py-[5px] px-[8px] mr-[25px] mt-[15px] md:text-[16px] md:px-[10px] hover:scale-110 duration-500',
-        image: 'rounded-md my-[20px] h-[80%] md:mx-auto lg:w-[40%]',
+        image: 'rounded-md my-[20px] h-[280px] md:mx-auto lg:w-[40%]',
         container: 'lg:w-[40%]',
     };
 
