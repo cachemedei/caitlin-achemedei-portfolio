@@ -6,7 +6,7 @@ import useLoader from '../hooks/use-loader.js';
 import Loading from '../components/Loader.jsx';
 
 const Home = () => {
-    const { loading } = useLoader(1500);
+    const { loading } = useLoader(2000);
     const style = {
         homePage: 'h-screen',
         aboutButton:

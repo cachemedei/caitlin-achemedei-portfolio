@@ -5,7 +5,7 @@ import useLoader from '../hooks/use-loader.js';
 import Loading from '../components/Loader.jsx';
 
 const Skills = () => {
-    const { loading } = useLoader(1500);
+    const { loading } = useLoader(2000);
 
     const style = {
         skillSection:
@@ -23,7 +23,7 @@ const Skills = () => {
     if (loading) {
         return <Loading />;
     }
-    
+
     return (
         <section className={style.skillSection}>
             <h1 className={style.title}>Skills</h1>
