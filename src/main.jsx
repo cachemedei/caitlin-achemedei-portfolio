@@ -9,7 +9,6 @@ import Home from './pages/Home';
 import AboutPage from './pages/About';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
-import Contact from './pages/Contact';
 
 const router = createBrowserRouter([
     {
@@ -20,7 +19,6 @@ const router = createBrowserRouter([
             { path: '/aboutpage', element: <AboutPage /> },
             { path: '/skills', element: <Skills /> },
             { path: '/projects', element: <Projects /> },
-            { path: '/contact', element: <Contact /> },
         ],
     },
 ]);

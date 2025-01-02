@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-import { CiMail } from 'react-icons/ci';
 import github from '/logos/github.svg';
 import linkedin from '/logos/linkedin.svg';
 import base from '/images/base.png';
@@ -15,6 +13,7 @@ const Footer = () => {
 
     return (
         <footer className={style.footerSection}>
+            {/* Background */}
             <div
                 className={style.base}
                 style={{
@@ -22,23 +21,27 @@ const Footer = () => {
                     backgroundSize: 'contain',
                 }}
             ></div>
+            {/* GitHub */}
             <a href='https://github.com/cachemedei' className={style.container}>
-                <img className={style.logo} src={github} alt='Github profile link' />
+                <img
+                    className={style.logo}
+                    src={github}
+                    alt='Github profile link'
+                />
                 <p>GitHub</p>
             </a>
-
+            {/* LinkedIn */}
             <a
                 href='https://www.linkedin.com/in/caitlin-achemedei-4616762b3/'
                 className={style.container}
             >
-                <img className={style.logo} src={linkedin} alt='Linkedin profile link' />
+                <img
+                    className={style.logo}
+                    src={linkedin}
+                    alt='Linkedin profile link'
+                />
                 <p>LinkedIn</p>
             </a>
-
-            <Link to='/contact' className={style.container}>
-                <CiMail className={style.logo} size={27} />
-                <p>Contact</p>
-            </Link>
         </footer>
     );
 };

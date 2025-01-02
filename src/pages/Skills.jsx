@@ -1,8 +1,12 @@
 import { Link } from 'react-router-dom';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import { skillLogos } from '../utils/skills-logos';
+import useLoader from '../hooks/use-loader.js';
+import Loading from '../components/Loader.jsx';
 
 const Skills = () => {
+    const { loading } = useLoader(1500);
+
     const style = {
         skillSection:
             'min-h-screen w-[70%] pt-[20px] mx-auto flex-col space-y-[30px] md:w-[60%] md:space-y-[40px] lg:w-[50%]',
@@ -15,6 +19,11 @@ const Skills = () => {
         projectsLink:
             'flex items-center justify-center h-[60px] gap-[10px] pt-[20px] text-[18px] hover:gap-[20px] duration-300 md:w-fit md:text-[22px]',
     };
+
+    if (loading) {
+        return <Loading />;
+    }
+    
     return (
         <section className={style.skillSection}>
             <h1 className={style.title}>Skills</h1>

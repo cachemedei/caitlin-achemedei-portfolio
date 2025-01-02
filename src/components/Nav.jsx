@@ -37,9 +37,6 @@ const Nav = () => {
                     <Link to='/skills' className={style.link}>
                         Skills
                     </Link>
-                    <Link to='/contact' className={style.link}>
-                        Contact
-                    </Link>
                 </section>
 
                 {/* Hamburger */}
@@ -72,13 +69,6 @@ const Nav = () => {
                 </Link>
                 <Link onClick={handleClick} to='/skills' className={style.link}>
                     Skills
-                </Link>
-                <Link
-                    onClick={handleClick}
-                    to='/contact'
-                    className={style.link}
-                >
-                    Contact
                 </Link>
             </section>
             <ScrollRestoration />
