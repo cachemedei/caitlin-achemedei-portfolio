@@ -12,7 +12,7 @@ export const projects = [
         description:
             'A dynamic web app to visually demonstrate how various sorting algorithms work. Built using ReactJS and styled using TailwindCSS.',
         image: '/project-images/visualiser.png',
-        code: 'https://github.com/cachemedei/sorting-visualiser',
+        code: 'https://github.com/cachemedei/sorting-algorithm-visualiser',
         site: 'https://visualgos.netlify.app/',
     },
     {
