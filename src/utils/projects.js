@@ -8,7 +8,7 @@ export const projects = [
         site: 'https://neighbourhoodnurture.netlify.app/',
     },
     {
-        title: 'Sorting Algorithm Visualiser',
+        title: 'visualgos',
         description:
             'A dynamic web app to visually demonstrate how various sorting algorithms work. Built using ReactJS and styled using TailwindCSS.',
         image: '/project-images/visualiser.png',
@@ -23,7 +23,7 @@ export const projects = [
         code: 'https://github.com/cachemedei/Pickster-App',
     },
     {
-        title: 'Australian Weather App',
+        title: 'Aus Weather',
         description:
             "An app built with ReactJS that uses Open Weather Map's API for generating up to date weather in Australian cities.",
         image: '/project-images/weather.png',
