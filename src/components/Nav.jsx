@@ -60,15 +60,15 @@ const Nav = () => {
                 <Link onClick={handleClick} to='/' className={style.link}>
                     Home
                 </Link>
+                <Link onClick={handleClick} to='/skills' className={style.link}>
+                    Skills
+                </Link>
                 <Link
                     onClick={handleClick}
                     to='/projects'
                     className={style.link}
                 >
                     Projects
-                </Link>
-                <Link onClick={handleClick} to='/skills' className={style.link}>
-                    Skills
                 </Link>
             </section>
             <ScrollRestoration />
