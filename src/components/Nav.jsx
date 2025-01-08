@@ -4,6 +4,8 @@ import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import logo from '/logos/ca-logo.png';
 import Footer from './Footer';
 import Background from './Background';
+import github from '/logos/github.svg';
+import linkedin from '/logos/linkedin.svg';
 
 const Nav = () => {
     const style = {
@@ -12,8 +14,10 @@ const Nav = () => {
             'space-x-[15px] mr-4 hidden font-light md:flex md:w-[60%] md:justify-evenly md:text-[18px]',
         mobileLinks:
             'flex flex-col items-center p-[100px] space-y-[25px] font-light min-h-screen text-[20px]',
-        link: 'hover:font-bold hover:text-[#1c451c] duration-500',
+        link: 'hover:scale-105 duration-500',
         logo: 'w-[100px] md:mr-[30px]',
+        container: 'flex gap-2 hover:scale-105 duration-300',
+        contactLogo: 'w-[30px]',
     };
 
     const [showNav, setShowNav] = useState(false);
@@ -37,6 +41,28 @@ const Nav = () => {
                     <Link to='/skills' className={style.link}>
                         Skills
                     </Link>
+                    {/* GitHub */}
+                    <a
+                        href='https://github.com/cachemedei'
+                        className={style.container}
+                    >
+                        <img
+                            className={style.contactLogo}
+                            src={github}
+                            alt='Github profile link'
+                        />
+                    </a>
+                    {/* LinkedIn */}
+                    <a
+                        href='https://www.linkedin.com/in/caitlin-achemedei-4616762b3/'
+                        className={style.container}
+                    >
+                        <img
+                            className={style.contactLogo}
+                            src={linkedin}
+                            alt='Linkedin profile link'
+                        />
+                    </a>
                 </section>
 
                 {/* Hamburger */}
@@ -70,6 +96,30 @@ const Nav = () => {
                 >
                     Projects
                 </Link>
+                {/* GitHub */}
+                <a
+                    href='https://github.com/cachemedei'
+                    className={style.container}
+                >
+                    <p>GitHub</p>
+                    <img
+                        className={style.contactLogo}
+                        src={github}
+                        alt='Github profile link'
+                    />
+                </a>
+                {/* LinkedIn */}
+                <a
+                    href='https://www.linkedin.com/in/caitlin-achemedei-4616762b3/'
+                    className={style.container}
+                >
+                    <p>LinkedIn</p>
+                    <img
+                        className={style.contactLogo}
+                        src={linkedin}
+                        alt='Linkedin profile link'
+                    />
+                </a>
             </section>
             <ScrollRestoration />
             <Outlet />
