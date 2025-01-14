@@ -35,11 +35,11 @@ const Nav = () => {
                     <Link to='/' className={style.link}>
                         Home
                     </Link>
-                    <Link to='/projects' className={style.link}>
-                        Projects
-                    </Link>
                     <Link to='/skills' className={style.link}>
                         Skills
+                    </Link>
+                    <Link to='/projects' className={style.link}>
+                        Projects
                     </Link>
                     {/* GitHub */}
                     <a

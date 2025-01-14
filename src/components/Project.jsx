@@ -5,7 +5,7 @@ const Project = () => {
         project: 'py-[10px] md:w-[90%] md:mx-auto lg:flex lg:items-center',
         projectTitle: 'text-[20px] text-[#1b721b] md:text-[26px]',
         text: 'font-light ml-[10px] md:text-[20px]',
-        button: 'border-[1px] border-[#6c976c] rounded py-[5px] px-[8px] mr-[25px] mt-[15px] md:text-[16px] md:px-[10px] hover:scale-110 duration-500',
+        button: 'border-[1px] border-[#6c976c] rounded py-[5px] px-[8px] mr-[25px] mt-[15px] md:text-[16px] md:px-[10px] hover:scale-105 hover:font-bold duration-500',
         image: 'rounded-md my-[20px] w-[280px] md:mx-auto md:w-[420px]',
         container: 'lg:w-[40%]',
     };

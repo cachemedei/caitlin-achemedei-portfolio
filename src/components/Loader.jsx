@@ -13,14 +13,14 @@ const Loading = () => {
     }, []);
 
     const style = {
-        loader: 'min-h-screen flex items-start justify-center pt-[100px] space-x-[20px] md:space-x-[60px]',
-        c1: `w-[25px] lg:w-[40px] transition-opacity ease-in-out duration-[500ms] ${
+        loader: 'min-h-screen flex items-start justify-center pt-[100px] space-x-[60px] lg:space-x-[100px]',
+        c1: `w-[25px] transition-opacity ease-in-out duration-[500ms] ${
             isVisible ? 'opacity-100' : 'opacity-0'
         }`,
-        c2: `w-[25px] lg:w-[40px] transition-opacity ease-in-out duration-[500ms] delay-[200ms] ${
+        c2: `w-[25px] transition-opacity ease-in-out duration-[500ms] delay-[200ms] ${
             isVisible ? 'opacity-100' : 'opacity-0'
         }`,
-        c3: `w-[25px] lg:w-[40px] transition-opacity ease-in-out duration-[500ms] delay-[400ms] ${
+        c3: `w-[25px] transition-opacity ease-in-out duration-[500ms] delay-[400ms] ${
             isVisible ? 'opacity-100' : 'opacity-0'
         }`,
     };
