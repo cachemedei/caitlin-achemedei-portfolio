@@ -10,7 +10,7 @@ const Home = () => {
     const style = {
         homePage: 'h-screen',
         aboutButton:
-            'flex items-center justify-center h-[60px] gap-[10px] text-[18px] mt-[100px] hover:gap-[20px] duration-300 md:hidden',
+            'flex items-center justify-center h-16 gap-2.5 text-lg mt-24 hover:gap-5 duration-300 md:hidden',
         aboutComponent: 'hidden md:flex',
     };
 

@@ -3,10 +3,10 @@ import girl from '/logos/girl.png';
 const AboutPage = () => {
     const style = {
         aboutPage:
-            'w-[75%] min-h-screen mx-auto pt-[80px] space-y-[40px] md:w-full md:pt-[20px] md:flex md:justify-center',
-        title: 'text-[28px] text-center text-[#1c451c] font-light italic w-[70%] mx-auto mb-[12px] md:hidden',
-        text: 'pl-[16px] mb-[16px] md:max-w-[550px] md:text-[20px] md:font-light md:pr-[8px]',
-        image: 'w-[150px] lg:w-[220px] mx-auto',
+            'w-3/4 min-h-screen mx-auto pt-20 space-y-10 md:w-full md:pt-5 md:flex md:justify-center',
+        title: 'text-3xl text-center text-[#1c451c] font-light italic w-3/4 mx-auto mb-3 md:hidden',
+        text: 'pl-4 mb-4 md:max-w-[550px] md:text-xl md:font-light md:pr-2',
+        image: 'w-36 lg:w-56 mx-auto',
     };
 
     return (

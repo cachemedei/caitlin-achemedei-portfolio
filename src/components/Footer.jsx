@@ -4,11 +4,11 @@ import base from '/images/base.png';
 
 const Footer = () => {
     const style = {
-        footerSection: 'h-fit flex justify-evenly mt-[30px] relative',
+        footerSection: 'h-fit flex justify-evenly mt-7 relative',
         container:
-            'flex flex-col items-center p-[8px] text-[16px] hover:mt-[-30px] duration-500 bg-[#e0ebd6] rounded z-100 md:text-[20px]',
-        logo: 'w-[30px]',
-        base: 'absolute bottom-0 w-full h-[40px] md:h-[50px] object-fit bg-repeat-x m-0 z-[-1]',
+            'flex flex-col items-center p-2 hover:mt-[-30px] duration-300 bg-[#e0ebd6] rounded z-100 md:text-xl',
+        logo: 'w-8',
+        base: 'absolute bottom-0 w-full h-10 md:h-12 object-fit bg-repeat-x m-0 z-[-1]',
     };
 
     return (

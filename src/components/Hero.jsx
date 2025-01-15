@@ -1,9 +1,9 @@
 const Hero = () => {
     const style = {
-        heroSection: 'w-[60%] mx-auto mt-[100px] md:w-[70%] lg:mt-[50px]',
-        greeting: 'text-[28px] mb-[15px] md:text-[34px]',
-        name: 'ml-[20px] font-bold text-[32px] text-[#1c451c] mb-[10px] md:text-[40px] md:pl-[30px]',
-        tagline: 'font-light text-[20px] md:text-[24px]',
+        heroSection: 'w-3/5 mx-auto mt-24 md:w-2/3 lg:mt-12',
+        greeting: 'text-2xl mb-4 md:text-3xl',
+        name: 'ml-5 font-bold text-4xl text-[#1c451c] mb-2.5 md:text-5xl md:pl-7',
+        tagline: 'font-light text-xl md:text-2xl',
     };
 
     return (

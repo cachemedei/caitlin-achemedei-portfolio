@@ -9,22 +9,23 @@ import linkedin from '/logos/linkedin.svg';
 
 const Nav = () => {
     const style = {
-        navbar: 'flex items-center justify-between w-[75%] mx-auto',
+        nav: '',
+        navbar: 'flex items-center justify-between w-3/4 mx-auto h-28',
         desktopLinks:
-            'space-x-[15px] mr-4 hidden font-light md:flex md:w-[60%] md:justify-evenly md:text-[18px]',
+            'space-x-4 mr-4 hidden font-light md:flex md:w-3/5 md:justify-evenly md:text-lg',
         mobileLinks:
-            'flex flex-col items-center p-[100px] space-y-[25px] font-light min-h-screen text-[20px]',
+            'flex flex-col items-center p-24 space-y-6 font-light min-h-screen text-xl',
         link: 'hover:scale-105 duration-500',
-        logo: 'w-[100px] md:mr-[30px]',
+        logo: 'w-24 md:mr-7',
         container: 'flex gap-2 hover:scale-105 duration-300',
-        contactLogo: 'w-[30px]',
+        contactLogo: 'w-7',
     };
 
     const [showNav, setShowNav] = useState(false);
     const handleClick = () => setShowNav(!showNav);
 
     return (
-        <nav>
+        <nav className={style.nav}>
             {/* Background Border */}
             <Background />
 

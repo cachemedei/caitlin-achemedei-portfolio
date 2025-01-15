@@ -2,12 +2,14 @@ import { projects } from '../utils/projects';
 
 const Project = () => {
     const style = {
-        project: 'py-[10px] md:w-[90%] md:mx-auto lg:flex lg:items-center',
-        projectTitle: 'text-[20px] text-[#1b721b] md:text-[26px]',
-        text: 'font-light ml-[10px] md:text-[20px]',
-        button: 'border-[1px] border-[#6c976c] rounded py-[5px] px-[8px] mr-[25px] mt-[15px] md:text-[16px] md:px-[10px] hover:scale-105 hover:font-bold duration-500',
-        image: 'rounded-md my-[20px] w-[280px] md:mx-auto md:w-[420px]',
-        container: 'lg:w-[40%]',
+        project:
+            'py-2 md:w-11/12 md:mx-auto lg:flex lg:items-center',
+        infoContainer: 'lg:w-2/5',
+        projectTitle: 'text-xl text-[#1b721b] md:text-2xl',
+        text: 'font-light ml-3 md:text-xl',
+        button: 'border-[1px] border-[#6c976c] rounded py-1 px-2 mr-6 mt-4 md:px-2.5 hover:scale-105 hover:font-bold duration-500',
+        imgContainer: 'min-h-64 md:min-h-96',
+        image: 'rounded-md my-5 w-70 md:mx-auto md:w-96',
     };
 
     return (
@@ -15,7 +17,7 @@ const Project = () => {
             {projects.map((project, i) => (
                 <article key={i} className={style.project}>
                     {/* title, description, buttons */}
-                    <div className={style.container}>
+                    <div className={style.infoContainer}>
                         <h2 className={style.projectTitle}>{project.title}</h2>
                         <p className={style.text}>{project.description}</p>
                         {project.site ? (
@@ -31,11 +33,13 @@ const Project = () => {
                             </a>
                         </button>
                     </div>
-                    <img
-                        className={style.image}
-                        src={project.image}
-                        alt='The homepage of the app'
-                    />
+                    <div className={style.imgContainer}>
+                        <img
+                            className={style.image}
+                            src={project.image}
+                            alt='The homepage of the app'
+                        />
+                    </div>
                 </article>
             ))}
         </>

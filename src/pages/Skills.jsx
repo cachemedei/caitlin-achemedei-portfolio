@@ -9,15 +9,16 @@ const Skills = () => {
 
     const style = {
         skillSection:
-            'min-h-screen w-[70%] pt-[20px] mx-auto flex-col space-y-[30px] md:w-[60%] md:space-y-[40px] lg:w-[50%]',
-        title: 'text-[28px] text-[#1c451c] md:text-[30px]',
-        text: 'w-[280px] font-light pl-[20px] md:w-[350px]',
+            'min-h-screen w-3/4 pt-5 mx-auto flex-col space-y-8 md:w-3/5 md:space-y-10 lg:w-1/2',
+        title: 'text-3xl text-[#1c451c] md:text-4xl',
+        text: 'w-72 font-light pl-5 md:w-96 md:text-xl',
         logoList:
-            'grid grid-cols-2 pt-[10px] gap-y-[30px] place-items-center md:grid-cols-3',
-        logo: 'w-[65px] hover:scale-110 duration-500 md:w-[75px]',
-        logoTitle: 'text-center mt-[10px]',
+            'grid grid-cols-2 pt-2 gap-y-8 place-items-center md:grid-cols-3',
+        listItem: 'h-28 md:h-32 flex flex-col justify-between',
+        logo: 'w-16 hover:scale-110 duration-500 md:w-20',
+        logoTitle: 'text-center mt-2.5',
         projectsLink:
-            'flex items-center justify-center h-[60px] gap-[10px] pt-[20px] text-[18px] hover:gap-[20px] duration-300 md:w-fit md:text-[22px]',
+            'flex items-center justify-center h-15 gap-2.5 pt-5 text-lg hover:gap-5 duration-300 md:w-fit md:text-2xl',
     };
 
     if (loading) {
@@ -32,7 +33,7 @@ const Skills = () => {
             </p>
             <ul className={style.logoList}>
                 {skillLogos.map((logo, i) => (
-                    <li key={i}>
+                    <li className={style.listItem} key={i}>
                         <img
                             className={style.logo}
                             key={i}

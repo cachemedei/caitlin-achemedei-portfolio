@@ -2,10 +2,10 @@ import girl from '/logos/girl.png';
 
 const AboutComponent = () => {
     const style = {
-        aboutComponent: 'w-[75%] mx-auto pt-[80px] space-y-[40px] md:pt-[20px] md:w-[70%] md:flex',
-        title: 'text-[28px] text-center font-light italic w-[70%] mx-auto mb-[12px] md:hidden',
-        text: 'pl-[16px] mb-[16px] md:max-w-[550px] md:text-[20px] md:font-light md:pr-[8px]',
-        image: 'w-[150px] mx-auto',
+        aboutComponent: 'w-3/4 mx-auto pt-20 space-y-10 md:pt-5 md:w-2/3 md:flex lg:w-fit',
+        title: 'text-3xl text-center font-light italic w-2/3 mx-auto mb-3 md:hidden',
+        text: 'pl-4 mb-4 md:max-w-[550px] md:text-lg md:font-light md:pr-2',
+        image: 'w-36 mx-auto',
 
     };
 
