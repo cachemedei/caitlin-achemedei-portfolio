@@ -22,7 +22,11 @@ const Footer = () => {
                 }}
             ></div>
             {/* GitHub */}
-            <a href='https://github.com/cachemedei' className={style.container}>
+            <a
+                href='https://github.com/cachemedei'
+                className={style.container}
+                target='blank'
+            >
                 <img
                     className={style.logo}
                     src={github}
@@ -34,6 +38,7 @@ const Footer = () => {
             <a
                 href='https://www.linkedin.com/in/caitlin-achemedei-4616762b3/'
                 className={style.container}
+                target='blank'
             >
                 <img
                     className={style.logo}

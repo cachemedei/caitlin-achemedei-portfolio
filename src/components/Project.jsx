@@ -20,11 +20,15 @@ const Project = () => {
                         <p className={style.text}>{project.description}</p>
                         {project.site ? (
                             <button className={style.button}>
-                                <a href={project?.site}>Deployed Site</a>
+                                <a href={project?.site} target='blank'>
+                                    Deployed Site
+                                </a>
                             </button>
                         ) : null}
                         <button className={style.button}>
-                            <a href={project.code}>Code</a>
+                            <a href={project.code} target='blank'>
+                                Code
+                            </a>
                         </button>
                     </div>
                     <img

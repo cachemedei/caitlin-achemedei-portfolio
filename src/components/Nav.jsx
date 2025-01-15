@@ -30,6 +30,13 @@ const Nav = () => {
 
             {/* Logo */}
             <section className={style.navbar}>
+                <Link onClick={() => setShowNav(false)} to='/'>
+                    <img
+                        className={style.logo}
+                        src={logo}
+                        alt='The initials C and A combined in a cursive style to create a logo'
+                    />
+                </Link>
                 {/* Desktop Menu */}
                 <section className={style.desktopLinks}>
                     <Link to='/' className={style.link}>
@@ -45,6 +52,7 @@ const Nav = () => {
                     <a
                         href='https://github.com/cachemedei'
                         className={style.container}
+                        target='blank'
                     >
                         <img
                             className={style.contactLogo}
@@ -56,6 +64,7 @@ const Nav = () => {
                     <a
                         href='https://www.linkedin.com/in/caitlin-achemedei-4616762b3/'
                         className={style.container}
+                        target='blank'
                     >
                         <img
                             className={style.contactLogo}
@@ -73,13 +82,6 @@ const Nav = () => {
                         <IoMdClose size={30} />
                     )}
                 </div>
-                <Link onClick={() => setShowNav(false)} to='/'>
-                    <img
-                        className={style.logo}
-                        src={logo}
-                        alt='The initials C and A combined in a cursive style to create a logo'
-                    />
-                </Link>
             </section>
             {/* Mobile Menu */}
             <section className={`${showNav ? style.mobileLinks : 'hidden'}`}>
@@ -100,6 +102,7 @@ const Nav = () => {
                 <a
                     href='https://github.com/cachemedei'
                     className={style.container}
+                    target='blank'
                 >
                     <p>GitHub</p>
                     <img
@@ -112,6 +115,7 @@ const Nav = () => {
                 <a
                     href='https://www.linkedin.com/in/caitlin-achemedei-4616762b3/'
                     className={style.container}
+                    target='blank'
                 >
                     <p>LinkedIn</p>
                     <img

@@ -3,7 +3,7 @@ import Project from '../components/Project';
 import useLoader from '../hooks/use-loader.js';
 
 const Projects = () => {
-    const { loading } = useLoader(2300);
+    const { loading } = useLoader(1000);
 
     const style = {
         projectPage: 'w-[70%] min-h-screen mx-auto',

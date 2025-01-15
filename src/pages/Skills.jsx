@@ -5,7 +5,7 @@ import useLoader from '../hooks/use-loader.js';
 import Loading from '../components/Loader.jsx';
 
 const Skills = () => {
-    const { loading } = useLoader(2100);
+    const { loading } = useLoader(1000);
 
     const style = {
         skillSection:
