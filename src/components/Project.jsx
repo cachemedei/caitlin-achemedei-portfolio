@@ -2,14 +2,14 @@ import { projects } from '../utils/projects';
 
 const Project = () => {
     const style = {
-        project:
-            'py-2 md:w-11/12 md:mx-auto lg:flex lg:items-center',
-        infoContainer: 'lg:w-2/5',
-        projectTitle: 'text-xl text-[#1b721b] md:text-2xl',
-        text: 'font-light ml-3 md:text-xl',
+        project: 'py-2 lg:flex lg:justify-between mb-4',
+        infoContainer: 'lg:w-80 lg:space-y-4 lg:h-fit lg:my-auto',
+        projectTitle: 'text-2xl text-[#1b721b] lg:text-3xl',
+        text: 'font-light ml-3 md:text-lg',
         button: 'border-[1px] border-[#6c976c] rounded py-1 px-2 mr-6 mt-4 md:px-2.5 hover:scale-105 hover:font-bold duration-500',
-        imgContainer: 'min-h-64 md:min-h-96',
-        image: 'rounded-md my-5 w-70 md:mx-auto md:w-96',
+        imgContainer:
+            'size-72 mt-6 md:size-96 lg:size-80 xl:size-96 border-[1px] mx-auto',
+        image: 'object-cover w-72 mx-auto md:w-96 lg:w-80 xl:w-96 rounded',
     };
 
     return (
