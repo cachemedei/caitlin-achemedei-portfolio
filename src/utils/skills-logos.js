@@ -1,5 +1,6 @@
 import '/logos/javascript.svg';
 import '/logos/react.png';
+import '/logos/nextjs.svg';
 import '/logos/python.svg';
 import '/logos/tailwind.svg';
 import '/logos/html.svg';
@@ -10,6 +11,11 @@ export const skillLogos = [
         src: '/logos/react.png',
         alt: 'A black square with a picture of an atom in the center',
         title: 'React',
+    },
+    {
+        src: '/logos/nextjs.svg',
+        alt: 'The letter N inside a black circle',
+        title: 'Next.js',
     },
     {
         src: '/logos/javascript.svg',

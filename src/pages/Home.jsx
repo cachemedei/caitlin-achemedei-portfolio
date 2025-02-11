@@ -12,6 +12,8 @@ const Home = () => {
         aboutButton:
             'flex items-center justify-center h-16 gap-2.5 text-lg mt-24 hover:gap-5 duration-300 md:hidden',
         aboutComponent: 'hidden md:flex',
+        skillsLink:
+            'hidden md:flex items-center justify-center h-15 gap-2.5 pt-5 text-lg hover:gap-5 duration-300 md:w-fit md:mx-auto md:text-2xl',
     };
 
     if (loading) {
@@ -27,6 +29,10 @@ const Home = () => {
             <div className={style.aboutComponent}>
                 <AboutComponent />
             </div>
+            <Link className={style.skillsLink} to='/skills'>
+                Skills
+                <IoIosArrowRoundForward size={22} />
+            </Link>
         </section>
     );
 };
