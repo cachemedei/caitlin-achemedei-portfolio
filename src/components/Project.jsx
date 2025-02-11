@@ -9,7 +9,7 @@ const Project = () => {
         button: 'border-[1px] border-[#6c976c] rounded py-1 px-2 mr-6 mt-4 md:px-2.5 hover:scale-105 hover:font-bold duration-500',
         imgContainer:
             'size-72 mt-6 md:size-96 lg:size-80 xl:size-96 border-[1px] mx-auto',
-        image: 'object-cover w-72 max-h-72 mx-auto md:w-96 lg:w-80 xl:w-96 rounded',
+        image: 'object-fit w-72 mx-auto md:w-96 lg:w-80 xl:w-96 rounded',
     };
 
     return (
