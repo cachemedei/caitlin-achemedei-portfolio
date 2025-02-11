@@ -21,6 +21,7 @@ export const projects = [
             "A Next.js powered web app that suggests a random movies to watch based on the user's genre of choice. Styled with TailwindCSS, integrated with The Movie Database API to fetch movie data and provide streaming services that offer the movie to buy, rent or watch with a subscription.",
         image: '/project-images/pickster-app.png',
         code: 'https://github.com/cachemedei/pickster',
+        site: 'https://pickstermovies.vercel.app/',
     },
     {
         title: 'visualgos',
